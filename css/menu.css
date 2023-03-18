@@ -10,32 +10,34 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-image: url(media/menu_wallpaper.png);
+    background-image: url(../media/menu_wallpaper.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
   }
-  
+  head {
+    scroll-behavior:smooth;
+  }
   @font-face {
     font-family: Gilroy-Bold;
-    src: url(font/Gilroy-Bold.ttf);
+    src: url(../font/Gilroy-Bold.ttf);
   }
   
   @font-face {
     font-family: Gilroy-Medium;
-    src: url(font/Gilroy-Medium.ttf);
+    src: url(../font/Gilroy-Medium.ttf);
   }
   
   @font-face {
     font-family: Gilroy-Regular;
-    src: url(font/Gilroy-Regular.ttf);
+    src: url(../font/Gilroy-Regular.ttf);
   }
   
   @font-face {
     font-family: Gilroy-UltraLight;
-    src: url(font/Gilroy-UltraLight.ttf);
+    src: url(../font/Gilroy-UltraLight.ttf);
   }
 .fixed{
   /* border: 1px solid white; */
@@ -137,6 +139,12 @@ a {
     font-size: 25px;
     vertical-align: middle;
 }
+.second {
+  border: 1px solid white;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space:nowrap;
+}
 .menucontainer{
     /* border: 1px solid white; */
     margin-left: auto;
@@ -204,7 +212,7 @@ table {
 .rightInfo {
   width: 100%;
   height: 100%;
-  background-image: url(media/main_wallpaper.png);
+  background-image: url(../media/main_wallpaper.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -259,8 +267,6 @@ table {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  /* фоновый цвет */
-  /* background: #0000009d; */
   backdrop-filter: blur(35px);
   z-index: 1001;
 }

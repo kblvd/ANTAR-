@@ -11,22 +11,22 @@ body {
 
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(font/Gilroy-Bold.ttf);
+  src: url(../font/Gilroy-Bold.ttf);
 }
 
 @font-face {
   font-family: Gilroy-Medium;
-  src: url(font/Gilroy-Medium.ttf);
+  src: url(../font/Gilroy-Medium.ttf);
 }
 
 @font-face {
   font-family: Gilroy-Regular;
-  src: url(font/Gilroy-Regular.ttf);
+  src: url(../font/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: Gilroy-UltraLight;
-  src: url(font/Gilroy-UltraLight.ttf);
+  src: url(../font/Gilroy-UltraLight.ttf);
 }
 /*-------------------ЕБЕЙШАЯ КНОПКА-------------------*/
 
@@ -53,7 +53,7 @@ body {
 }
 /*ANIMATION LOADER*/
 .section:first-child {
-  background-image: url(media/main_wallpaper.png);
+  background-image: url(../media/main_wallpaper.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -177,7 +177,7 @@ a.headerlink {
 .cardcontent1 {
   min-width: 100%;
   height: 100%;
-  background-image: url(media/about1.png);
+  background-image: url(../media/about1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -188,7 +188,7 @@ a.headerlink {
 .cardcontent2 {
   min-width: 100%;
   height: 100%;
-  background-image: url(media/about2.png);
+  background-image: url(../media/about2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -199,7 +199,7 @@ a.headerlink {
 .cardcontent3 {
   min-width: 100%;
   height: 100%;
-  background-image: url(media/about3.png);
+  background-image: url(../media/about3.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -288,7 +288,7 @@ a.headerlink {
 .rightInfo {
   width: 50%;
   height: 100%;
-  background-image: url(media/bgfooter.png);
+  background-image: url(../media/bgfooter.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
