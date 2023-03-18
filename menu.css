@@ -1,0 +1,273 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+  } 
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url(media/menu_wallpaper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+  
+  @font-face {
+    font-family: Gilroy-Bold;
+    src: url(font/Gilroy-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-Medium;
+    src: url(font/Gilroy-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-Regular;
+    src: url(font/Gilroy-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-UltraLight;
+    src: url(font/Gilroy-UltraLight.ttf);
+  }
+.fixed{
+  /* border: 1px solid white; */
+  /* position: fixed; */
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(35px);
+  border-bottom: 1px black solid;
+}
+header{
+    /* border: 1px solid white; */
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    flex-flow: row wrap;
+}
+.homeLink {
+    margin-left: 50px;
+    margin-top: 31px;
+}
+.bron {
+    right: 0;
+    height: 37px;
+    border: 2px solid white;
+    transition: .4s;
+    background-color: #ffffff00;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    font-family: "Gilroy-Bold";
+    order: 999;
+    margin-top: 31px;
+    margin-right: 50px;
+  }
+  .bron:hover {
+    background-color: #fff;
+    color: black;
+    box-shadow: -8px 8px #808080;
+    transition: .4s;
+  }
+a {
+    text-decoration: none;
+    color: #808080;
+    margin-right: 10px;
+}
+.bruh {
+    /* border: 1px solid white; */
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 300ms;
+}
+.bruh:hover {
+    color: #afafaf;
+  }
+   
+.bruh:focus {
+    transition: 300ms;
+    outline: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(35px);
+    border-radius: 7px;
+  }
+/* .bruh:hover {
+    color: #afafaf;
+  } */
+   
+.bruh:focus {
+    transition: 300ms;
+    outline: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(35px);
+    border-radius: 7px;
+  }
+.navBlock {
+    /* border: 1px solid white; */
+    position: sticky;
+    position: relative;
+    height: 117px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+}
+.navigationbar{
+    /* border: 1px solid rgb(16, 113, 193); */
+    display: flex;
+    height: 56px;
+    width: 100%;
+    font-family: "Gilroy-Medium";
+    font-size: 25px;
+    vertical-align: middle;
+}
+.menucontainer{
+    /* border: 1px solid white; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    display: flex;
+    overflow: auto;
+    margin-top: 150px;
+}
+.item{
+    /* border: 1px solid white; */
+    display: flex;
+    width: 100%;
+}
+.itemphoto{
+    max-width: 50%;
+    margin: auto;
+    height: auto;
+}
+.itemtext{
+    /* border: 1px solid rgb(136, 136, 136); */
+    display: block;
+    max-width: 50%;
+    text-align: left;
+    margin: auto;
+    align-items: flex-start;
+}
+.manedescript{
+    font-size: 30px;
+    font-family: "Gilroy-Medium";
+    color: white;
+}
+.descript{
+    font-size: 25px;
+    font-family: "Gilroy-UltraLight";
+    color: #808080;
+}
+.volume{
+    margin-top: 40px;
+}
+
+
+
+
+
+/* T A B L E */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  border-spacing: 0px 30px;
+  border-collapse: separate;
+}
+
+/* table td, table th {
+  border: 1px solid #cbbdbd;
+} */
+
+
+
+
+
+
+/* F O O T E R  */
+
+.infoContact {
+  display:  flex;
+  width: 100%;
+  /* height: 100%; */
+  height: 1080px;
+  background-color: #000;
+}
+
+
+.rightInfo {
+  width: 100%;
+  height: 100%;
+  background-image: url(media/main_wallpaper.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+}
+
+.info {
+  font-family: "Gilroy-Medium";
+  font-size: 40px;
+  letter-spacing: 20px;
+  color: white;
+  margin-bottom: 80px;
+  
+}
+
+.contacts {
+  /* border: 2px solid white; */
+  max-width: 568px;
+  text-align: left;
+  margin: auto;
+
+  align-items: flex-start;
+}
+
+.mailPhone {
+  /* border: 1px solid white; */
+  font-family: "Gilroy-Regular";
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+  
+}
+
+.date {
+  margin-bottom: 0px;
+}
+
+.word {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+
+#maildop{
+  /* border: 1px solid rgb(136, 136, 136); */
+  display: flex;
+}
+
+#mailtime {
+  display: inline-block;
+}
+
+
+/* F O O T E R  */
