@@ -192,15 +192,6 @@ table {
   border-collapse: separate;
 }
 
-/* table td, table th {
-  border: 1px solid #cbbdbd;
-} */
-
-
-
-
-
-
 /* F O O T E R  */
 
 .infoContact {
@@ -210,8 +201,6 @@ table {
   height: 1080px;
   background-color: #000;
 }
-
-
 .rightInfo {
   width: 100%;
   height: 100%;
@@ -223,22 +212,18 @@ table {
   color: white;
   display: flex;
 }
-
 .info {
   font-family: "Gilroy-Medium";
   font-size: 40px;
   letter-spacing: 20px;
   color: white;
-  margin-bottom: 80px;
-  
+  margin-bottom: 80px; 
 }
-
 .contacts {
   /* border: 2px solid white; */
   max-width: 568px;
   text-align: left;
   margin: auto;
-
   align-items: flex-start;
 }
 
@@ -248,26 +233,42 @@ table {
   font-size: 30px;
   color: white;
   margin-bottom: 30px;
-  
 }
-
 .date {
   margin-bottom: 0px;
 }
-
 .word {
   /* border: 1px solid red; */
   text-align: left;
 }
-
 #maildop{
   /* border: 1px solid rgb(136, 136, 136); */
   display: flex;
 }
-
 #mailtime {
   display: inline-block;
 }
-
-
 /* F O O T E R  */
+
+
+/*ANIMATION LOADER*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  /* background: #0000009d; */
+  backdrop-filter: blur(35px);
+  z-index: 1001;
+}
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
+/*ANIMATION LOADER*/

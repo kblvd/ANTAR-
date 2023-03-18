@@ -31,6 +31,27 @@ body {
 /*-------------------ЕБЕЙШАЯ КНОПКА-------------------*/
 
 /*-------------------ЕБЕЙШАЯ КНОПКА-------------------*/
+/*ANIMATION LOADER*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  /* background: #0000009d; */
+  backdrop-filter: blur(35px);
+  z-index: 1001;
+}
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
+/*ANIMATION LOADER*/
 .section:first-child {
   background-image: url(media/main_wallpaper.png);
   background-position: center center;

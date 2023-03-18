@@ -14,6 +14,10 @@
 </head>
 
 <body>
+<!--animation loader-->
+    <div class="preloader">
+    </div>
+<!--animation loader-->
     <div class="Baya">
             <div class="fixed">
                 <a href="index.html">
@@ -40,7 +44,7 @@
                     <tr>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -53,35 +57,7 @@
                         </td>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
-                                <div class="itemtext">
-                                    <div class="itemtext sub">
-                                        <p class="manedescript">Багэтики</p>
-                                        <p class="descript">Хлебшек, соусец, бомбастер</p>
-                                        <p class="descript volume">666 мл.</p>
-                                        <p class="manedescript">696.-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
-                                <div class="itemtext">
-                                    <div class="itemtext sub">
-                                        <p class="manedescript">Багэтики</p>
-                                        <p class="descript">Хлебшек, соусец, бомбастер</p>
-                                        <p class="descript volume">666 мл.</p>
-                                        <p class="manedescript">696.-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -96,7 +72,7 @@
                     <tr>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -109,7 +85,7 @@
                         </td>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -124,7 +100,7 @@
                     <tr>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -137,7 +113,35 @@
                         </td>
                         <td>
                             <div class="item">
-                                <img src="photo/food webp/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <div class="itemtext">
+                                    <div class="itemtext sub">
+                                        <p class="manedescript">Багэтики</p>
+                                        <p class="descript">Хлебшек, соусец, бомбастер</p>
+                                        <p class="descript volume">666 мл.</p>
+                                        <p class="manedescript">696.-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
+                                <div class="itemtext">
+                                    <div class="itemtext sub">
+                                        <p class="manedescript">Багэтики</p>
+                                        <p class="descript">Хлебшек, соусец, бомбастер</p>
+                                        <p class="descript volume">666 мл.</p>
+                                        <p class="manedescript">696.-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="item">
+                                <img src="photo/food/DSC_2650.webp" alt="not_found" class="itemphoto">
                                 <div class="itemtext">
                                     <div class="itemtext sub">
                                         <p class="manedescript">Багэтики</p>
@@ -174,6 +178,17 @@
             </div>
         </div>
     </div>
+    <!--animation loader Script-->
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+    <!--animation loader Script--> 
 </body>
 
 </html>

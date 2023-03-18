@@ -24,7 +24,10 @@
 </head>
 
 <body>
-
+<!--animation loader-->
+<div class="preloader">
+</div>
+<!--animation loader-->
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -124,6 +127,14 @@
       $('#fullpage').fullpage();
       menu: '#navigation'
     });
+
+    window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
   </script>
   <!--Yandex Map-->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ca42e8dc-6ff9-44ea-b4ff-255e128e1084>"
