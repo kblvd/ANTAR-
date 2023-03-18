@@ -79,9 +79,10 @@ body {
 }
 
 .container {
-  width: 650px;
+  margin-right: 60px;
+  /* max-width: 100%; */  
+  display: inline-block;
   /* border: 1px solid white; */
-  margin-right: 0px;
   padding: 0%;
   text-align: right;
 }
@@ -343,9 +344,9 @@ a.headerlink {
 }
 
 @media screen and (max-width: 1350px) {
-  .navbar{
+  /* .navbar{
     text-align: center;
-  }
+  } */
   .info {
     font-family: "Gilroy-Medium";
     font-size: 30px;
@@ -405,7 +406,14 @@ a.headerlink {
   }
 
 }
-
+@media screen and (max-width: 765px) {
+  .menu {
+    border-bottom: none;
+  }
+  .headerlink {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 600px) {
   .abouttxtbutton{
     margin-left: 50px;
