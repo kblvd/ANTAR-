@@ -58,7 +58,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -99,7 +99,7 @@ a.headerlink {
 .navbar {
   min-height: 70px;
   /* border: 1px solid white; */
-  background-color: #46464600;
+  background-color: #00000000;
   font-size: 25px;
   font-family: "Gilroy-Bold";
   padding-top: 30px;
@@ -107,11 +107,11 @@ a.headerlink {
 }
 
 .nav>li>a:focus {
-  background-color: #46464600;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .nav>li>a:hover {
-  background-color: #46464600;
+  background-color: #00000000;
 }
 
 .nav>li {
@@ -127,7 +127,7 @@ a.headerlink {
   border: 2px solid white;
   transition: .4s;
   text-align: center;
-  background-color: #ffffff00;
+  background-color: #00000000;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -183,7 +183,7 @@ a.headerlink {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #000000;
 }
 
 .cardcontent2 {
@@ -194,7 +194,7 @@ a.headerlink {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #000000;
 }
 
 .cardcontent3 {
@@ -205,7 +205,7 @@ a.headerlink {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #000000;
 }
 
 .abouttxtbutton {
@@ -279,11 +279,12 @@ a.headerlink {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #515719;
+  background-color: #000000;
 }
 
 #map {
   opacity: 0.4;
+  overflow: auto;
 }
 
 .rightInfo {
@@ -406,12 +407,15 @@ a.headerlink {
   }
 
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   .menu {
     border-bottom: none;
   }
   .headerlink {
     text-align: left;
+  }
+  .container{
+  margin-right: 30px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -455,6 +459,29 @@ a.headerlink {
 
 }
 
-@media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 510px) {
+  .aboutbutton {
+    font-size: 15px;
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .lrbutton{
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .lrbuttonpng{
+    width: 25px;
+    height: 25px;
+  }
+  .lrbuttons{
+    margin-left: 0;
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+  .navbar{
+    font-size: 20px;
+  }
 }

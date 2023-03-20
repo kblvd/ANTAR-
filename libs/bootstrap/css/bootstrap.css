@@ -4534,7 +4534,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
+
 }
+@media screen and (max-width: 767px) {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+
+  backdrop-filter: blur(35px);
+}
+}
+
+
+
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
