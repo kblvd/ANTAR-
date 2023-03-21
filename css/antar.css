@@ -28,9 +28,7 @@ body {
   font-family: Gilroy-UltraLight;
   src: url(../font/Gilroy-UltraLight.ttf);
 }
-/*-------------------ЕБЕЙШАЯ КНОПКА-------------------*/
 
-/*-------------------ЕБЕЙШАЯ КНОПКА-------------------*/
 /*ANIMATION LOADER*/
 .preloader {
   position: fixed;
@@ -39,18 +37,19 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  /* фоновый цвет */
-  /* background: #0000009d; */
   backdrop-filter: blur(35px);
   z-index: 1001;
 }
+
 .loaded_hiding .preloader {
   transition: 1s opacity;
   opacity: 0;
 }
+
 .loaded .preloader {
   display: none;
 }
+
 /*ANIMATION LOADER*/
 .section:first-child {
   background-image: url(../media/main_wallpaper.webp);
@@ -63,7 +62,7 @@ body {
 }
 
 .section:nth-child(2) {
-  background: #2d2e28;
+  background: #000000;
 }
 
 .section:last-child {
@@ -80,7 +79,7 @@ body {
 
 .container {
   margin-right: 60px;
-  /* max-width: 100%; */  
+  /* max-width: 100%; */
   display: inline-block;
   /* border: 1px solid white; */
   padding: 0%;
@@ -95,6 +94,7 @@ a.headerlink {
   /* border: 1px solid white; */
   margin-right: 50px;
 }
+
 /*Меню*/
 .navbar {
   min-height: 70px;
@@ -140,7 +140,7 @@ a.headerlink {
   transition: .4s;
 }
 
-.menu{
+.menu {
   border-bottom: 2px solid white;
 }
 
@@ -163,113 +163,8 @@ a.headerlink {
   margin-right: 70px;
 }
 
-.card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: auto;
-}
-
-.card::-webkit-scrollbar {
-  display: none;
-}
-
-.cardcontent1 {
-  min-width: 100%;
-  height: 100%;
-  background-image: url(../media/about1.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000000;
-}
-
-.cardcontent2 {
-  min-width: 100%;
-  height: 100%;
-  background-image: url(../media/about2.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000000;
-}
-
-.cardcontent3 {
-  min-width: 100%;
-  height: 100%;
-  background-image: url(../media/about3.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000000;
-}
-
-.abouttxtbutton {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-bottom: 100px;
-  margin-left: 100px;
-}
-
-.abouttxt {
-  font-family: "Gilroy-Bold";
-  font-size: 60px;
-  color: white;
-  margin-bottom: 40px;
-}
-
-.aboutbutton {
-  width: 350px;
-  height: 100px;
-  background: rgba(217, 217, 217, 0.01);
-  border: 1px solid rgba(0, 0, 0, 0.11);
-  box-shadow: -4px 4px 3px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(35px);
-  border-radius: 13px;
-
-  font-family: "Gilroy-Medium";
-  font-size: 33px;
-  color: white;
-  transition: .4s;
-}
-
-/* .aboutbutton:hover {
-  box-shadow: -8px 8px #808080;
-  transition: .4s;
-} */
-
-.aboutbutton:hover{
-  transition: 300ms;
-  background: #47637a;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
-}
-
-.lrbuttons {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 100px;
-  margin-right: 100px;
-}
-
-.lrbutton {
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
-  background: rgba(217, 217, 217, 0.01);
-  border: 1px solid rgba(0, 0, 0, 0.11);
-  box-shadow: -4px 4px 3px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(35px);
-  border-radius: 13px;
-}
-
 .infoContact {
-  display:  flex;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -283,8 +178,8 @@ a.headerlink {
 }
 
 #map {
-  opacity: 0.4;
   overflow: auto;
+  filter: invert(1);
 }
 
 .rightInfo {
@@ -305,7 +200,6 @@ a.headerlink {
   letter-spacing: 20px;
   color: white;
   margin-bottom: 80px;
-  
 }
 
 .contacts {
@@ -313,7 +207,6 @@ a.headerlink {
   max-width: 568px;
   text-align: left;
   margin: auto;
-
   align-items: flex-start;
 }
 
@@ -323,7 +216,6 @@ a.headerlink {
   font-size: 30px;
   color: white;
   margin-bottom: 30px;
-  
 }
 
 .date {
@@ -335,7 +227,7 @@ a.headerlink {
   text-align: left;
 }
 
-#maildop{
+#maildop {
   /* border: 1px solid rgb(136, 136, 136); */
   display: flex;
 }
@@ -345,6 +237,7 @@ a.headerlink {
 }
 
 @media screen and (max-width: 1350px) {
+
   /* .navbar{
     text-align: center;
   } */
@@ -354,15 +247,14 @@ a.headerlink {
     letter-spacing: 15px;
     color: white;
     margin-bottom: 60px;
-    
   }
+
   .mailPhone {
     /* border: 1px solid white; */
     font-family: "Gilroy-Regular";
     font-size: 20px;
     color: white;
     margin-bottom: 15px;
-    
   }
 }
 
@@ -370,118 +262,69 @@ a.headerlink {
   .logoInfo {
     font-size: 18px;
   }
+
   .maneLogo {
     margin-bottom: 50px;
   }
+
   .dateTime {
     margin-top: 12px;
   }
-  .abouttxt {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  .aboutbutton {
-    font-size: 16px;
-    width: 160px;
-    height: 50px;
-  }
-  .lrbutton{
-    width: 50px;
-    height: 50px;
-  }
-  .lrbuttonpng{
-    width: 30px;
-    height: 30px;
-  }
+
   .infoContact {
-    display:  inline-block;
+    display: inline-block;
   }
+
   .leftMap {
     width: 100%;
     height: 50%;
   }
+
   .rightInfo {
     width: 100%;
     height: 50%;
     text-align: center;
   }
-
 }
+
 @media screen and (max-width: 767px) {
+  /* .card{
+    padding: 80px 30px;
+  } */
   .menu {
     border-bottom: none;
   }
+
   .headerlink {
     text-align: left;
   }
-  .container{
-  margin-right: 30px;
+
+  .container {
+    margin-right: 30px;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .abouttxtbutton{
-    margin-left: 50px;
-    margin-bottom: 50px;
-  }
-  .abouttxt {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  .aboutbutton {
-    font-size: 16px;
-    width: 160px;
-    height: 50px;
-  }
-  .lrbutton{
-    margin-left: 25px;
-  }
-  .lrbuttons{
-    margin-left: 0;
-    margin-bottom: 50px;
-    margin-right: 50px;
-  }
+
   .info {
     font-family: "Gilroy-Medium";
     font-size: 20px;
     letter-spacing: 15px;
     color: white;
     margin-bottom: 60px;
-    
   }
+
   .mailPhone {
     /* border: 1px solid white; */
     font-family: "Gilroy-Regular";
     font-size: 16px;
     color: white;
     margin-bottom: 15px;
-    
   }
-
 }
 
 @media screen and (max-width: 510px) {
-  .aboutbutton {
-    font-size: 15px;
-    width: 140px;
-    height: 30px;
-    border-radius: 5px;
-  }
-  .lrbutton{
-    margin-left: 25px;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-  }
-  .lrbuttonpng{
-    width: 25px;
-    height: 25px;
-  }
-  .lrbuttons{
-    margin-left: 0;
-    margin-bottom: 50px;
-    margin-right: 50px;
-  }
-  .navbar{
+  .navbar {
     font-size: 20px;
   }
 }

@@ -21,12 +21,13 @@
   <script src="/examples/vendors/popper.js/popper.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="/examples/vendors/bootstrap-4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/antarSliter.css">
 </head>
 
 <body>
-<!--animation loader-->
-<div class="preloader"></div>
-<!--animation loader-->
+  <!--animation loader-->
+  <div class="preloader"></div>
+  <!--animation loader-->
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -71,18 +72,111 @@
     </section>
 
     <section class="section" data-anchor="about">
-      <div class="abouttxtbutton">
-        <div class="abouttxt">STAY WHIS US</div>
-        <button class="aboutbutton">Я хочу прийти</button>
-      </div>
-      <div class="lrbuttons">
-        <button class="lrbutton"><img class="lrbuttonpng" src="media/left.png" alt="left"></button>
-        <button class="lrbutton"><img class="lrbuttonpng" src="media/right.png" alt="right"></button>
-      </div>
-      <div class="card">
-        <div class="cardcontent1"></div>
-        <div class="cardcontent2"></div>
-        <div class="cardcontent3"></div>
+      <div class="cont s--inactive">
+        <!-- cont inner start -->
+        <div class="cont__inner">
+          <!-- el start -->
+          <div class="el">
+            <div class="el__overflow">
+              <div class="el__inner">
+                <div class="el__bg"></div>
+                <div class="el__content">
+                  <!--Write txt here-->
+                  <div class="el__text"></div>
+                  <div class="el__close-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="el__index">
+              <div class="el__index-back">1</div>
+              <div class="el__index-front">
+                <div class="el__index-overlay" data-index="1">1</div>
+              </div>
+            </div>
+          </div>
+          <!-- el end -->
+          <!-- el start -->
+          <div class="el">
+            <div class="el__overflow">
+              <div class="el__inner">
+                <div class="el__bg"></div>
+                <div class="el__content">
+                  <!--Write txt here-->
+                  <div class="el__text"></div>
+                  <div class="el__close-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="el__index">
+              <div class="el__index-back">2</div>
+              <div class="el__index-front">
+                <div class="el__index-overlay" data-index="2">2</div>
+              </div>
+            </div>
+          </div>
+          <!-- el end -->
+          <!-- el start -->
+          <div class="el">
+            <div class="el__overflow">
+              <div class="el__inner">
+                <div class="el__bg"></div>
+                <div class="el__content">
+                  <!--Write txt here-->
+                  <div class="el__text"></div>
+                  <div class="el__close-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="el__index">
+              <div class="el__index-back">3</div>
+              <div class="el__index-front">
+                <div class="el__index-overlay" data-index="3">3</div>
+              </div>
+            </div>
+          </div>
+          <!-- el end -->
+          <!-- el start -->
+          <div class="el">
+            <div class="el__overflow">
+              <div class="el__inner">
+                <div class="el__bg"></div>
+                <div class="el__content">
+                  <!--Write txt here-->
+                  <div class="el__text"></div>
+                  <div class="el__close-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="el__index">
+              <div class="el__index-back">4</div>
+              <div class="el__index-front">
+                <div class="el__index-overlay" data-index="4">4</div>
+              </div>
+            </div>
+          </div>
+          <!-- el end -->
+          <!-- el start -->
+          <div class="el">
+            <div class="el__overflow">
+              <div class="el__inner">
+                <div class="el__bg"></div>
+                <div class="el__content">
+                  <!--Write txt here-->
+                  <div class="el__text"></div>
+                  <div class="el__close-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="el__index">
+              <div class="el__index-back">5</div>
+              <div class="el__index-front">
+                <div class="el__index-overlay" data-index="5">5</div>
+              </div>
+            </div>
+          </div>
+          <!-- el end -->
+        </div>
+        <!-- cont inner end -->
       </div>
     </section>
 
@@ -128,12 +222,12 @@
     });
 
     window.onload = function () {
-          document.body.classList.add('loaded_hiding');
-          window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-          }, 500);
-        }
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
   </script>
   <!--Yandex Map-->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ca42e8dc-6ff9-44ea-b4ff-255e128e1084>"
@@ -141,6 +235,7 @@
   <script src="js/yandexmap.js" type="text/javascript"></script>
   <!--Stop Scroll-->
   <script src="js/stopscroll.js"></script>
+  <script src="js/antarSliter.js"></script>
 </body>
 
 </html>
